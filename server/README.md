@@ -14,4 +14,4 @@ $ npx prisma migrate deploy
 # development
 $ npm run dev
 ```
-
+<sub>Nesse mesmo repositório contém um arquivo JSON, com todas as requisições da aplicação para importar para Insomnia</sub>
