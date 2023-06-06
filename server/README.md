@@ -13,5 +13,11 @@ $ npx prisma migrate deploy
 ```bash
 # development
 $ npm run dev
+
+# build para produção (converte arquivos .ts em .js)
+$ npm run build
+
+# start os arquivos gerados no build para produção
+$ npm start
 ```
 <sub>Nesse mesmo repositório contém um arquivo JSON, com todas as requisições da aplicação para importar para Insomnia</sub>
