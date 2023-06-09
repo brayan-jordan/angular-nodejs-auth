@@ -32,7 +32,10 @@
       #confirmPassword="ngModel"
       minlength="8"
     />
-    <button type="submit">Create account</button>
+    <button type="submit">
+      <app-loader *ngIf="isLoading"></app-loader>
+      <ng-container *ngIf="!isLoading">Create account</ng-container>
+    </button>
     <span>Already have account? <a routerLink="/login">Login</a></span>
   </form>
 </div>

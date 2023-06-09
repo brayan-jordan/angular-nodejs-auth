@@ -56,6 +56,9 @@
       height: 44px;
       line-height: 1;
       transition: 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       &:hover {
         background-color: darken($color: #166265, $amount: 3%);
