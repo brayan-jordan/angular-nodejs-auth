@@ -1,0 +1,31 @@
+<div id="signup">
+  <img src="../../../assets/logo_transparent.png" alt="" />
+  <h1>Enter your account</h1>
+  <form (submit)="submit(f)" #f="ngForm">
+    <input
+      type="text"
+      name="email"
+      id="email"
+      placeholder="Enter your email address…"
+      required
+      ngModel
+      #email="ngModel"
+      email
+    />
+    <input
+      type="password"
+      name="password"
+      id="password"
+      placeholder="Enter your password..."
+      required
+      ngModel
+      #password="ngModel"
+      minlength="8"
+    />
+    <button type="submit">
+      <app-loader *ngIf="isLoading"></app-loader>
+      <ng-container *ngIf="!isLoading">Login</ng-container>
+    </button>
+    <span>Don't have an account? <a routerLink="/signup">Sign Up</a></span>
+  </form>
+</div>

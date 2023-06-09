@@ -1,0 +1,5 @@
+<div id="home">
+  <app-loader *ngIf="!message"></app-loader>
+  <ng-container *ngIf="message">{{ message }}</ng-container>
+  <button (click)="logout()">Logout</button>
+</div>

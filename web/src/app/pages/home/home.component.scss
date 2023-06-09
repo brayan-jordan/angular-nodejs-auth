@@ -1,0 +1,30 @@
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  gap: 16px;
+
+  button {
+    background-color: #166265;
+    border: 1px solid #0b3043;
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 5px;
+    color: white;
+    height: 44px;
+    line-height: 1;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background-color: darken($color: #166265, $amount: 3%);
+      border: 1px solid darken($color: #0b3043, $amount: 3%);
+    }
+  }
+}

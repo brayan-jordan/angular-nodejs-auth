@@ -34,7 +34,7 @@ export class SignupComponent {
         error: (err) => {
           this.toastr.error(err.error.message);
         },
-        next: (res) => {
+        next: () => {
           this.toastr.success('Successfully registered user');
           this.router.navigate(['/login']);
         },
