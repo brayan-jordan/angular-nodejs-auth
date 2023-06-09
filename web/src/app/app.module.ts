@@ -10,9 +10,10 @@ import { FormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import { HttpClientModule } from '@angular/common/http';
 import { LoaderComponent } from './components/loader/loader.component';
+import { AddressNotFoundComponent } from './pages/address-not-found/address-not-found.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, SignupComponent, HomeComponent, LoaderComponent],
+  declarations: [AppComponent, LoginComponent, SignupComponent, HomeComponent, LoaderComponent, AddressNotFoundComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

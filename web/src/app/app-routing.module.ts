@@ -3,12 +3,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
+import { authGuard } from './shared/guard/auth.guard';
+import { AddressNotFoundComponent } from './pages/address-not-found/address-not-found.component';
 
 const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
     pathMatch: 'full',
+    canActivate: [authGuard],
   },
   {
     path: 'login',
@@ -17,6 +20,10 @@ const routes: Routes = [
   {
     path: 'signup',
     component: SignupComponent,
+  },
+  {
+    path: '**',
+    component: AddressNotFoundComponent,
   },
 ];
 

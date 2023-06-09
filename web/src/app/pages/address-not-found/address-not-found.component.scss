@@ -1,0 +1,14 @@
+#address-not-found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  flex-direction: column;
+  gap: 16px;
+
+  img {
+    width: 164px;
+    height: 164px;
+  }
+}
