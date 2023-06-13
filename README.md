@@ -9,7 +9,7 @@ Antes de desenvolver a aplicação front-end, eu desenvolvi um [protótipo de m�
 
 As instruções para rodar esse projeto na sua máquina estão separadas por [Back-end](https://github.com/brayan-jordan/angular-nodejs-auth/blob/main/server/README.md) e [Front-end](https://github.com/brayan-jordan/angular-nodejs-auth/blob/main/web/README.md), basta acessar cada um desses links e seguir o passo a passo. 🛹
 
-Esse projeto está hospedado de forma gratuita em:
+Esse projeto está hospedado de forma gratuita usando Vercel e pode ser acessado a qualquer momento usando o seguinte link: https://angular-nodejs-auth.vercel.app/ 🌍
 
 ## application images
 1 - Tela de cadastro:
