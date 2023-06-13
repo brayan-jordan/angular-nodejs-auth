@@ -2,13 +2,14 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { SimulateContent, UserToken } from './api.types';
+import { environment } from '../../environments/environment';
 
 @Injectable({ providedIn: 'root' })
 export class ApiService {
   constructor(private httpClient: HttpClient) {}
 
   signUp(email: string, password: string, confirmPassword: string) {
-    return this.httpClient.post('http://localhost:3333/user', {
+    return this.httpClient.post(`${environment.apiUrl}/user`, {
       email,
       password,
       confirmPassword,
@@ -16,7 +17,7 @@ export class ApiService {
   }
 
   login(email: string, password: string): Observable<UserToken> {
-    return this.httpClient.post<UserToken>('http://localhost:3333/login', {
+    return this.httpClient.post<UserToken>(`${environment.apiUrl}/login`, {
       email,
       password,
     });
@@ -24,7 +25,7 @@ export class ApiService {
 
   content(): Observable<SimulateContent> {
     return this.httpClient.get<SimulateContent>(
-      'http://localhost:3333/content',
+      `${environment.apiUrl}/content`,
       {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
