@@ -11,7 +11,22 @@ As instruções para rodar esse projeto na sua máquina estão separadas por [Ba
 
 Esse projeto está hospedado de forma gratuita em:
 
-Segue algumas imagens 
+## application images
+1 - Tela de cadastro:
+<img src="https://github.com/brayan-jordan/angular-nodejs-auth/blob/main/prints/signup.png" alt="Tela de cadastro">
+
+2 - Tela de login:
+<img src="https://github.com/brayan-jordan/angular-nodejs-auth/blob/main/prints/login.png" alt="Tela de login">
+
+3 - Exemplo de responsividade
+<img src="https://github.com/brayan-jordan/angular-nodejs-auth/blob/main/prints/responsive.png" alt="Exemplo de responsividade">
+
+4 - Validações dos campos do formulário (não executa a requisição de cadastro se os pré requisitos do formulário forem inválidos)
+<img src="https://github.com/brayan-jordan/angular-nodejs-auth/blob/main/prints/not-send-form.png" alt="Angular not send form">
+
+
+
+
 
 
 
